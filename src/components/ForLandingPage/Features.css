@@ -1,0 +1,17 @@
+/* Features.css */
+.feature-card {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: box-shadow 0.3s ease; /* Add this line for smooth transition */
+  
+    /* Hover effect */
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
