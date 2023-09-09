@@ -1,38 +1,134 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar-shadow:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 5px;
+}
+
+.mainSection{
+  background: url('../public/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.sp1-main{
+  background: url('./assets/sp1-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.features{
+  background: url('./assets/features-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+.h-main, .mhf-main, .main-chatbot,.dnm-main,.j-main,.r-main{
+  background: url('./assets/features-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.chat-history::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+.chat-history::-webkit-scrollbar-thumb {
+  background-color: rgb(114 119 255); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.r-card:hover{
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-item {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
